@@ -27,6 +27,7 @@ export class SongDetailPageComponent implements OnInit {
   @ViewChild('annotateButton') annotateButton!: ElementRef<HTMLButtonElement>;
   @ViewChild('annotateInputWindow') annotateInputWindow!: ElementRef<HTMLDivElement>;
   @ViewChild('annotationTextarea') annotationTextarea!: ElementRef<HTMLTextAreaElement>;
+  @ViewChild('lyricsContainer') lyricsContainer!: ElementRef<HTMLDivElement>;
   constructor(
     private route: ActivatedRoute,
     private songService: SongService,
@@ -254,6 +255,7 @@ export class SongDetailPageComponent implements OnInit {
         span.addEventListener('click', this.showAnnotation.bind(this));
       });
       console.log("Finished. Can click now!!!!!!!!!");
+      this.lyricsContainer.nativeElement.classList.remove('hidden');
   }, timeoutMs);
     console.log("timeoutMS: " + timeoutMs);
 
