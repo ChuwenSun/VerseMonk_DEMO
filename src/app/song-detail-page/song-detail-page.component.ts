@@ -253,6 +253,7 @@ export class SongDetailPageComponent implements OnInit {
         console.log("annotationSpan adding: " + span.textContent);
         span.addEventListener('click', this.showAnnotation.bind(this));
       });
+      console.log("Finished. Can click now!");
   }, timeoutMs);
     console.log("timeoutMS: " + timeoutMs);
 
