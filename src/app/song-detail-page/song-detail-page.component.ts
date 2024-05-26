@@ -252,7 +252,7 @@ export class SongDetailPageComponent implements OnInit {
         console.log("annotationSpan adding: " + span.textContent);
         span.addEventListener('click', this.showAnnotation.bind(this));
       });
-  }, 50);
+  }, 500);
 
 
 
