@@ -20,7 +20,7 @@
       <p><strong>Genre:</strong> {{ song.genre }}</p>
       <p><strong>Features:</strong> {{ song.features }}</p>
       <h2 class="text-2xl font-semibold mt-6 mb-4">Lyrics</h2>
-      <div #lyricsContainer (mouseup)="onMouseUp()" class="lyrics-container hidden">
+      <div #lyricsContainer (mouseup)="onMouseUp()" class="lyrics-container hidden messy">
         <pre [innerHTML]="formattedLyrics | safeHtml"></pre>
       </div>
       <button #annotateButton (click)="showAddAnnotationWindow()" class="bg-purple-600 text-white px-4 py-2 rounded-full shadow-lg hover:shadow-purple-glow transition-all duration-100 hover:+translate-y-0 hover:scale-105 hidden z-10 absolute">Annotate</button>
