@@ -245,7 +245,7 @@ export class SongDetailPageComponent implements OnInit {
   }
 
   ngAfterViewInit(): void {
-    const timeoutMs = 10000;
+    const timeoutMs = 3000;
     setTimeout(() => {
       const annotationSpans = this.elementRef.nativeElement.querySelectorAll('.annotation-span');
       console.log("In ngAfterViewInit");
