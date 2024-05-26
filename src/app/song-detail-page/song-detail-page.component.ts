@@ -28,6 +28,7 @@ export class SongDetailPageComponent implements OnInit {
   @ViewChild('annotateInputWindow') annotateInputWindow!: ElementRef<HTMLDivElement>;
   @ViewChild('annotationTextarea') annotationTextarea!: ElementRef<HTMLTextAreaElement>;
   @ViewChild('lyricsContainer') lyricsContainer!: ElementRef<HTMLDivElement>;
+  @ViewChild('loadingSvg') loadingSvg!: ElementRef<HTMLDivElement>;
   constructor(
     private route: ActivatedRoute,
     private songService: SongService,
@@ -256,6 +257,7 @@ export class SongDetailPageComponent implements OnInit {
       });
       console.log("Finished. Can click now!!!!!!!!!");
       this.lyricsContainer.nativeElement.classList.remove('hidden');
+      this.loadingSvg.nativeElement.classList.add('hidden');
   }, timeoutMs);
     console.log("timeoutMS: " + timeoutMs);
 
