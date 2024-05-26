@@ -1,0 +1,42 @@
+<!-- <div *ngIf="song">
+    <h1>{{ song.title }}</h1>
+    <p><strong>Artist:</strong> {{ song.artist }}</p>
+    <p><strong>Album:</strong> {{ song.album }}</p>
+    <p><strong>Year:</strong> {{ song.year }}</p>
+    <p><strong>Views:</strong> {{ song.views }}</p>
+    <p><strong>Genre:</strong> {{ song.genre }}</p>
+    <p><strong>Features:</strong> {{ song.features }}</p>
+    <h2>Lyrics</h2>
+    <pre [innerHTML]="formattedLyrics"></pre>
+  </div> -->
+
+  <div *ngIf="song" class="flex">
+    <div class="flex-2 p-5">
+      <h1 class="text-3xl font-bold mb-4">{{ song.title }}</h1>
+      <p><strong>Artist:</strong> {{ song.artist }}</p>
+      <p><strong>Album:</strong> {{ song.album }}</p>
+      <p><strong>Year:</strong> {{ song.year }}</p>
+      <p><strong>Views:</strong> {{ song.views }}</p>
+      <p><strong>Genre:</strong> {{ song.genre }}</p>
+      <p><strong>Features:</strong> {{ song.features }}</p>
+      <h2 class="text-2xl font-semibold mt-6 mb-4">Lyrics</h2>
+      <div (mouseup)="onMouseUp()" class="lyrics-container">
+        <pre [innerHTML]="formattedLyrics | safeHtml"></pre>
+      </div>
+      <button #annotateButton (click)="showAddAnnotationWindow()" class="bg-purple-600 text-white px-4 py-2 rounded-full shadow-lg hover:shadow-purple-glow transition-all duration-100 hover:+translate-y-0 hover:scale-105 hidden z-10 absolute">Annotate</button>
+    </div>
+    <div #annotateInputWindow class="hidden absolute p-4 bg-white border border-gray-300 rounded-lg shadow-md">
+      <textarea #annotationTextarea class="w-full h-24 p-2 border border-gray-300 rounded-lg" placeholder="Don’t just put the lyric in your own words—drop some knowledge!"></textarea>
+      <div class="flex justify-end space-x-4 mt-2">
+        <button (click)="saveAnnotation()" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Save</button>
+        <button (click)="hideAnnotateInputWindow()" class="text-gray-500 px-4 py-2 rounded-lg">Cancel</button>
+      </div>
+    </div>
+      <app-annotation [ngClass]="{'hidden': !isAnnotationVisible}" [annotation]="selectedAnnotation" (closeAnnotation)="hideAnnotation()"></app-annotation>
+  </div>
+
+  
+
+  
+  
+  

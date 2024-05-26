@@ -1,0 +1,36 @@
+<div class="relative inline-block text-left">
+  <div>
+    <button (click)="isOpen = !isOpen" class="inline-flex justify-center w-full border border-gray-300 px-4 py-2 rounded-md shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none">
+      {{ getFilterText() }}
+      <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+      </svg>
+    </button>
+  </div>
+
+  <div [ngClass]="{'block': isOpen, 'hidden': !isOpen}" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition-all duration-700 ease-in-out transform" [class.scale-70]="!isOpen" [class.opacity-0]="!isOpen" [class.scale-120]="isOpen" [class.opacity-100]="isOpen" [class.bg-red-100]="isOpen" [class.bg-white]="!isOpen">
+    <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+      <div class="px-4 py-2 text-sm text-gray-700">
+        <label class="block mb-1">Genre</label>
+        <select [(ngModel)]="selectedGenre" class="w-full border border-gray-300 rounded-md">
+          <option *ngFor="let genre of genres" [value]="genre">{{ genre }}</option>
+        </select>
+      </div>
+      <div class="px-4 py-2 text-sm text-gray-700">
+        <label class="block mb-1">Year</label>
+        <select [(ngModel)]="selectedYear" class="w-full border border-gray-300 rounded-md">
+          <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+        </select>
+      </div>
+      <div class="px-4 py-2 text-sm text-gray-700">
+        <label class="block mb-1">Language</label>
+        <select [(ngModel)]="selectedLanguage" class="w-full border border-gray-300 rounded-md">
+          <option *ngFor="let language of languages" [value]="language">{{ language }}</option>
+        </select>
+      </div>
+      <div class="px-4 py-2">
+        <button (click)="applyFilter()" class="w-full bg-purple-600 text-white px-4 py-2 rounded-md">Apply Filter</button>
+      </div>
+    </div>
+  </div>
+</div>

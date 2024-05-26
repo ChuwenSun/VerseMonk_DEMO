@@ -1,0 +1,15 @@
+.app-header {
+    /* Your styles here */
+    margin-bottom: 20px;
+    background-color: aqua;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    /* Additional styles */
+  }
+
+  .navbar{
+    background-color: aqua;
+  }
+

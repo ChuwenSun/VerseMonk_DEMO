@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  /* Add more font-face rules as needed for other variants */
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Programme';
+    src: url('/assets/fonts/Programme/Programme-Regular.eot');
+    src: url('/assets/fonts/Programme/Programme-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Programme/Programme-Regular.woff2') format('woff2'),
+         url('/assets/fonts/Programme/Programme-Regular.woff') format('woff'),
+         url('/assets/fonts/Programme/Programme-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Programme';
+    src: url('/assets/fonts/Programme/Programme-RegularRot.eot');
+    src: url('/assets/fonts/Programme/Programme-RegularRot.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Programme/Programme-RegularRot.woff2') format('woff2'),
+         url('/assets/fonts/Programme/Programme-RegularRot.woff') format('woff'),
+         url('/assets/fonts/Programme/Programme-RegularRot.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Programme';
+    src: url('/assets/fonts/Programme/Programme-RegularIta.eot');
+    src: url('/assets/fonts/Programme/Programme-RegularIta.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Programme/Programme-RegularIta.woff2') format('woff2'),
+         url('/assets/fonts/Programme/Programme-RegularIta.woff') format('woff'),
+         url('/assets/fonts/Programme/Programme-RegularIta.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Programme';
+    src: url('/assets/fonts/Programme/Programme-Bold.eot');
+    src: url('/assets/fonts/Programme/Programme-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Programme/Programme-Bold.woff2') format('woff2'),
+         url('/assets/fonts/Programme/Programme-Bold.woff') format('woff'),
+         url('/assets/fonts/Programme/Programme-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Programme';
+    src: url('/assets/fonts/Programme/Programme-BoldRot.eot');
+    src: url('/assets/fonts/Programme/Programme-BoldRot.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Programme/Programme-BoldRot.woff2') format('woff2'),
+         url('/assets/fonts/Programme/Programme-BoldRot.woff') format('woff'),
+         url('/assets/fonts/Programme/Programme-BoldRot.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Programme';
+    src: url('/assets/fonts/Programme/Programme-BoldIta.eot');
+    src: url('/assets/fonts/Programme/Programme-BoldIta.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Programme/Programme-BoldIta.woff2') format('woff2'),
+         url('/assets/fonts/Programme/Programme-BoldIta.woff') format('woff'),
+         url('/assets/fonts/Programme/Programme-BoldIta.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Programme';
+    src: url('/assets/fonts/Programme/Programme-Light.eot');
+    src: url('/assets/fonts/Programme/Programme-Light.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Programme/Programme-Light.woff2') format('woff2'),
+         url('/assets/fonts/Programme/Programme-Light.woff') format('woff'),
+         url('/assets/fonts/Programme/Programme-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Programme';
+    src: url('/assets/fonts/Programme/Programme-LightRot.eot');
+    src: url('/assets/fonts/Programme/Programme-LightRot.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Programme/Programme-LightRot.woff2') format('woff2'),
+         url('/assets/fonts/Programme/Programme-LightRot.woff') format('woff'),
+         url('/assets/fonts/Programme/Programme-LightRot.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Programme';
+    src: url('/assets/fonts/Programme/Programme-LightIta.eot');
+    src: url('/assets/fonts/Programme/Programme-LightIta.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Programme/Programme-LightIta.woff2') format('woff2'),
+         url('/assets/fonts/Programme/Programme-LightIta.woff') format('woff'),
+         url('/assets/fonts/Programme/Programme-LightIta.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Programme';
+    src: url('/assets/fonts/Programme/Programme-Primitiv.eot');
+    src: url('/assets/fonts/Programme/Programme-Primitiv.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Programme/Programme-Primitiv.woff2') format('woff2'),
+         url('/assets/fonts/Programme/Programme-Primitiv.woff') format('woff'),
+         url('/assets/fonts/Programme/Programme-Primitiv.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

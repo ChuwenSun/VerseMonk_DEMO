@@ -1,0 +1,9 @@
+<div>
+    <h1>Hot Songs</h1>
+    <ul>
+      <li *ngFor="let song of hotSongs">
+        <a [routerLink]="['/songs', song.id]">{{ song.title }} by {{ song.artist }} ({{ song.views }} views)</a>
+      </li>
+    </ul>
+  </div>
+  
