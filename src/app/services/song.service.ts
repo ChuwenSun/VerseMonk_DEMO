@@ -16,6 +16,7 @@ export class SongService {
   constructor(private http: HttpClient) {}
 
   getSongs(): Observable<Song[]> {
+    console.log('calling apiurl:' + this.baseUrl);
     return this.http.get<any[]>(`${this.baseUrl}`).pipe(
       map(data => data.map(item => this.transformSong(item)))
     );
