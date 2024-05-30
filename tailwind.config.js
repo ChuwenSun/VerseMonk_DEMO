@@ -9,6 +9,9 @@ module.exports = {
 
 
     extend: {
+      padding:{
+        '50vw': '50vw',
+      },
       colors:{
         red:{
           fire: '#FF1464',

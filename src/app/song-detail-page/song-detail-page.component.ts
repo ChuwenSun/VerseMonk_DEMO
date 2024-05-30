@@ -207,7 +207,7 @@ export class SongDetailPageComponent implements OnInit {
   formatLyricsWithAnnotations(lyrics: string, annotations: Annotation[]): string {
     let offset = 0;
     annotations.forEach(annotation => {
-      const startTag = `<span data-annotation-id="${annotation._id}" class="annotation-span bg-gray-300 cursor-pointer text-white p-1 rounded" ">`;
+      const startTag = `<span data-annotation-id="${annotation._id}" class="annotation-span bg-gray-300 cursor-pointer p-1 rounded" ">`;
       const endTag = '</span>';
       lyrics = lyrics.slice(0, annotation.startIndex + offset) + startTag + 
                lyrics.slice(annotation.startIndex + offset, annotation.endIndex + offset) + 
