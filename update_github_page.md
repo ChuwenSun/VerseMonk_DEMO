@@ -1,9 +1,8 @@
 Step1:
-ng build --configuration production
- --base-href "https://ChuwenSun.github.io/VerseMonk_DEMO/"
+ng build --configuration production --base-href "https://ChuwenSun.github.io/VerseMonk_DEMO/"
 
 Step 2:
- ngh --dir=dist/verse_monk/browser 
+ngh --dir=dist/verse_monk/browser 
 
 Step 3:
 git add .

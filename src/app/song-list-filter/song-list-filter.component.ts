@@ -3,29 +3,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
   selector: 'app-song-list-filter',
   templateUrl: './song-list-filter.component.html',
   styleUrls: ['./song-list-filter.component.css'],
-  // animations: [
-  //   trigger('dropdownAnimation', [
-  //     state('open', style({
-  //       opacity: 1,
-  //       transform: 'translateY(0)'
-  //     })),
-  //     state('closed', style({
-  //       opacity: 0,
-  //       transform: 'translateY(-10px)'
-  //     })),
-  //     transition('closed =&gt; open', [
-  //       animate('300ms ease-out')
-  //     ]),
-  //     transition('open =&gt; closed', [
-  //       animate('200ms ease-in')
-  //     ])
-  //   ])
-  // ]
 
 })
 export class SongListFilterComponent {
-  genres: string[] = ['All Genres', 'Hip-Hop', 'Pop', 'Rock', 'Jazz']; // Add more genres as needed
-  years: string[] = ['All Years', '2023', '2022', '2021', '2020']; // Add more years as needed
+  genres: string[] = ['All Genres', 'rap', 'pop', 'rock', 'jazz']; // Add more genres as needed
+  years: string[] = ['All Years', '1980s', '1990s', '2000 ->']; // Add more years as needed
   languages: string[] = ['All Languages', 'en', 'es', 'fr']; // Add more languages as needed
 
   selectedGenre: string = 'All Genres';

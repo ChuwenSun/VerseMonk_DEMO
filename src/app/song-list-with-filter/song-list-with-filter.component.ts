@@ -58,6 +58,8 @@ export class SongListWithFilterComponent implements OnInit {
   }
 
   onFilterChange(filter: { genre: string, year: string, language: string }) {
+
+
     this.songService.getFilteredSongs(filter.genre, filter.year, filter.language).subscribe(
       data => {
         this.songs = data;

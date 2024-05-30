@@ -35,16 +35,19 @@ export class SongService {
   }
 
   getFilteredSongs(genre: string, year: string, language: string): Observable<Song[]> {
-    let params = new HttpParams();
-    if (genre !== 'All Genres') {
-      params = params.set('genre', genre);
-    }
-    if (year !== 'All Years') {
-      params = params.set('year', year);
-    }
-    if (language !== 'All Languages') {
-      params = params.set('language', language);
-    }
+    let params = new HttpParams()    
+    .set('genre', genre)
+    .set('year', year)
+    .set('language', language);    
+    // if (genre !== 'All Genres') {
+    //   params = params.set('genre', genre);
+    // }
+    // if (year !== 'All Years') {
+    //   params = params.set('year', year);
+    // }
+    // if (language !== 'All Languages') {
+    //   params = params.set('language', language);
+    // }
 
     return this.http.get<any[]>(`${this.apiUrl}/songs/filter`, { params }).pipe(
       map(data => data.map(item => this.transformSong(item)))
