@@ -9,6 +9,7 @@ import { SongDetailPageComponent } from './song-detail-page/song-detail-page.com
 import { HotSongsListComponent } from './hot-songs-list/hot-songs-list.component';
 import { SongListWithFilterComponent } from './song-list-with-filter/song-list-with-filter.component';
 const routes: Routes = [    
+    { path: '', component: SongListWithFilterComponent },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'posts', component: PostListComponent },
