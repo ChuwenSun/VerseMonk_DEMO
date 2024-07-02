@@ -1,5 +1,7 @@
 # VerseMonk
 
+You can view the backend service code in here: https://github.com/ChuwenSun/VerseMonk_Backend
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
 
 ## Development server
